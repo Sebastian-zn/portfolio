@@ -1,0 +1,64 @@
+.title {
+  display: block;
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.image {
+ width: 100%;
+ height: auto;
+ display: block;
+ padding: 10px 30px;
+}
+
+img {
+  width: 60%;
+  height: 350px;
+  display: block;
+  margin: 0 auto;
+}
+
+.actions {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.sub-div {
+  width: 50%;
+  height: auto;
+  display: inline-block;
+}
+
+.btn {
+  display: block;
+  margin: 0 auto;
+  color: #fff;
+  width: 70%;
+  height: 30px;
+  cursor: pointer;
+}
+
+.edit {
+  background-color: rgb(217, 255, 48);
+}
+
+.del {
+  background-color: rgb(255, 37, 37);
+}
+
+.info {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 10px 30px;
+}
+
+span {
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(96, 65, 121);
+}

@@ -1,0 +1,55 @@
+<div class="form-header">
+  <h2>{{title}}</h2>
+</div>
+<hr />
+<div class="form-body">
+  <div class="success-message" *ngIf="status == 'success'">
+    <span>The project was uploaded successfully!</span>
+  </div>
+  <div class="failed-message" *ngIf="status == 'failed'">
+    <span>The project was not uploaded.</span>
+  </div>
+  <form action="" #projectForm='ngForm' (ngSubmit)="onSubmit(projectForm)">
+    <div class="pair">
+      <div class="input-box">
+        <label for="name">Name</label><br />
+        <input type="text" name="name" id="name" #name="ngModel" [(ngModel)]="project.name" required />
+        <span *ngIf="name.touched && !name.valid">El campo no es valido.</span>
+      </div>
+      <div class="input-box">
+        <label for="category">Category</label><br />
+        <input type="text" name="category" id="category" #category="ngModel" [(ngModel)]="project.category" required />
+        <span *ngIf="category.touched && !category.valid">El campo no es valido.</span>
+      </div>
+    </div>
+    <div class="pair">
+      <div class="input-box">
+        <label for="langs">Languages</label><br />
+        <input type="text" name="langs" id="langs" #langs="ngModel" [(ngModel)]="project.langs" required />
+        <span *ngIf="langs.touched && !langs.valid">El campo no es valido.</span>
+      </div>
+      <div class="input-box">
+        <label for="year">Year</label><br />
+        <input type="text" name="year" id="year" #year="ngModel" [(ngModel)]="project.year" required />
+        <span *ngIf="year.touched && !year.valid">El campo no es valido.</span>
+      </div>
+    </div>
+    <div class="pair">
+      <div class="input-box">
+        <label for="description">Description</label><br />
+        <textarea type="text" name="description" id="description" #description="ngModel"
+          [(ngModel)]="project.description" required></textarea>
+        <span *ngIf="description.touched && !description.valid">El campo no es valido.</span>
+      </div>
+      <div class="input-box">
+        <label for="img">Image</label><br />
+        <input type="file" name="img" id="img" #image="ngModel" [(ngModel)]="project.image"
+          (change)="fileChangeEvent($event)" />
+        <span *ngIf="image.touched && !image.valid">Por favor inserta un archivo válido.</span>
+      </div>
+    </div>
+    <div class="box-button">
+      <input type="submit" value="Add" [disabled]="!projectForm.form.valid" />
+    </div>
+  </form>
+</div>

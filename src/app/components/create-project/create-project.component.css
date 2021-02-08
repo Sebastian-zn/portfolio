@@ -1,0 +1,68 @@
+.form-header {
+  color: #fff;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+.form-header h2 {
+  font-size: 40px;
+}
+
+.form-body {
+  width: 100%;
+  display: inline-block;
+}
+
+.success-message {
+  color: rgb(87, 181, 87);
+}
+
+.failed-message {
+  color: red;
+}
+
+.pair {
+  width: 100%;
+  float: left;
+}
+
+.pair .input-box {
+  width: 46%;
+  padding: 0 15px;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+.pair input[type="text"],
+.pair input[type="number"],
+.pair input[type="file"],
+.pair textarea {
+  width: 100%;
+}
+
+.pair span {
+  color: red;
+  font-style: italic;
+  font-size: 13px;
+}
+
+.box-button {
+  width: 100%;
+  float: left;
+}
+
+.box-button input {
+  color: #fff;
+  background-color: blueviolet;
+  width: 50%;
+  height: 20px;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.box-button input[disabled] {
+  opacity: 0.4;
+  cursor: not-allowed;
+}

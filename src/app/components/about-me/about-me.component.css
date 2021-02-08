@@ -1,0 +1,26 @@
+.data {
+  text-align: center;
+  padding: 0 40px 0 40px;
+  margin-bottom: 30px;
+}
+
+.data h1 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.data h2,
+.data p {
+  color: rgba(0, 0, 0, 0.5);
+  font-style: italic;
+}
+
+.article {
+  padding: 0 40px;
+  margin-top: 30px;
+}
+
+.article p {
+  margin-top: 30px;
+  text-align: justify;
+}

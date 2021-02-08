@@ -1,0 +1,24 @@
+<div class="title">
+  <h1>{{project.name}}</h1>
+</div>
+<hr />
+<div class="image">
+  <img src="{{url + 'get-image/' + project.image}}" alt="img">
+</div>
+
+<div class="actions">
+  <div class="sub-div">
+    <button class="btn edit" routerLink="/edit + project._id">Edit Project</button>
+  </div>
+  <div class="sub-div">
+    <button class="btn del" (click)="deleteProject(project._id)">Delete Project</button>
+  </div>
+</div>
+
+<div class="info">
+  <span>Year: </span>{{project.year}} <br />
+  <span>Category: </span>{{project.category}} <br />
+  <span>Programming languages: </span>{{project.langs}} <br />
+  <span>Description: </span>
+  <p>{{project.description}}</p>
+</div>
